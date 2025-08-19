@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Desenhos Cristãos para Colorir – +50 Páginas Exclusivas</title>
+  <meta name="description" content="Mais de 50 páginas cristãs para colorir! Oferta especial, download imediato, estimule a criatividade e a fé das crianças.">
+  <meta name="keywords" content="desenhos cristãos, colorir, infantil, fé, criatividade, download, digital, bíblia, crianças">
+  <meta property="og:title" content="Desenhos Cristãos para Colorir – Oferta Exclusiva!">
+  <meta property="og:description" content="Mais de 50 páginas cristãs para colorir! De R$69,99 por apenas R$14,99. Download imediato.">
+  <meta property="og:image" content="og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seusite.com/">
+  <meta property="og:site_name" content="Desenhos Cristãos para Colorir">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image:alt" content="Mockup do livrinho digital para colorir">
+  <meta name="theme-color" content="#2a7be4">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://seusite.com/">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Barra Fixa de Urgência (sempre visível) -->
+  <div class="barra-urgencia">
+    <span>🔥 Oferta Exclusiva! Só hoje por R$14,99</span>
+    <button class="cta-barra">Comprar Agora</button>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <h1 class="hero-title"><span id="typewriter"></span></h1>
+    <p class="hero-subtitle">De <s>R$69,99</s> por <strong>R$14,99</strong> – Só hoje!</p>
+    <img src="mockup-livro.png" alt="Mockup do livrinho digital" class="hero-mockup">
+    <button class="cta-glow" id="cta-main">Quero Agora</button>
+  </header>
+
+  <!-- Timer de Contagem Regressiva -->
+  <section class="timer-section">
+    <div class="timer">
+      <span class="timer-icon">⏳</span>
+      <span id="timer">00:15:23</span>
+    </div>
+    <p class="timer-text">Oferta acaba em instantes!</p>
+  </section>
+
+  <!-- Progresso de Vendas -->
+  <section class="progresso-vendas">
+    <div class="progresso-bar">
+      <div class="progresso-fill" id="progresso-fill"></div>
+    </div>
+    <span class="progresso-text"><span id="progresso-num">87%</span> dos pacotes já vendidos!</span>
+  </section>
+
+  <!-- Notificações de Compra em Tempo Real -->
+  <div id="notificacoes"></div>
+
+  <!-- Benefícios -->
+  <section class="beneficios">
+    <h2>Por que escolher?</h2>
+    <ul>
+      <li>✅ Menos tempo no celular</li>
+      <li>✅ Mais criatividade e fé</li>
+      <li>✅ +50 páginas exclusivas</li>
+      <li>✅ Download imediato</li>
+    </ul>
+  </section>
+
+  <!-- Bônus Especial -->
+  <section class="bonus">
+    <span class="bonus-texto">🎁 BÔNUS: 10 páginas extras grátis comprando hoje!</span>
+  </section>
+
+  <!-- Demonstração do Produto -->
+  <section class="galeria-produto">
+    <h2>Exemplos para colorir</h2>
+    <div class="galeria" id="galeria"><!-- exemplo1.png, exemplo2.png, exemplo3.png, exemplo4.png --></div>
+  </section>
+
+  <!-- Testemunho em Vídeo -->
+  <section class="video-testemunho">
+    <h2>Veja na prática</h2>
+    <div class="video-slideshow" id="video-slideshow">
+      <video src="video1.mp4" playsinline autoplay loop muted style="width:48%;max-width:160px;border-radius:1.2rem;box-shadow:0 2px 8px #2a7be422;margin:0 1% 0 0;display:inline-block;"></video>
+      <video src="video2.mp4" playsinline autoplay loop muted style="width:48%;max-width:160px;border-radius:1.2rem;box-shadow:0 2px 8px #2a7be422;display:inline-block;"></video>
+    </div>
+  </section>
+
+  <!-- Carrossel de Provas Sociais -->
+  <section class="carrossel-depoimentos">
+    <h2>Famílias recomendam</h2>
+    <div class="depoimentos-wrapper" id="depoimentos-wrapper"></div>
+  </section>
+
+  <!-- Seção do Super Pack (Upsell) -->
+  <section class="super-pack">
+    <div class="super-pack-card">
+      <img src="drive-upsell.png" alt="Mockup Super Pack 150 páginas" class="superpack-mockup" style="width:90%;max-width:320px;margin-bottom:1rem;display:block;margin-left:auto;margin-right:auto;border-radius:18px;box-shadow:0 2px 8px #f74d4d22;">
+      <span class="super-pack-destaque">🔥 Super Pack: 150 páginas – <s>R$99,99</s> por <strong>R$19,99</strong></span>
+      <button class="cta-glow secundario" id="cta-superpack">Quero o Super Pack</button>
+    </div>
+  </section>
+
+  <!-- Garantia de Satisfação -->
+  <section class="garantia">
+    <img src="selo-garantia.png" alt="Selo Garantia 7 dias" class="selo-garantia">
+    <p>Garantia 7 dias: ou seu dinheiro de volta!</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Dúvidas Frequentes</h2>
+    <div class="faq-item">
+      <button class="faq-pergunta">É físico ou digital?</button>
+      <div class="faq-resposta">100% digital, baixe na hora.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-pergunta">Como recebo?</button>
+      <div class="faq-resposta">No e-mail após o pagamento.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-pergunta">Posso imprimir quantas vezes quiser?</button>
+      <div class="faq-resposta">Sim, imprima à vontade!</div>
+    </div>
+  </section>
+
+  <!-- Prova de Segurança -->
+  <section class="seguranca">
+    <div class="selos">
+      <img src="selo-checkout.png" alt="Checkout Seguro">
+      <img src="selo-cartao.png" alt="Cartões">
+      <img src="selo-pix.png" alt="PIX">
+    </div>
+    <p>🔒 Compra 100% segura e acesso imediato.</p>
+  </section>
+
+  <!-- Botão WhatsApp Flutuante -->
+  <a href="https://wa.me/5599999999999?text=Quero%20saber%20mais%20sobre%20os%20desenhos%20crist%C3%A3os%20para%20colorir" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale no WhatsApp">
+    <img src="logo-whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <nav>
+      <a href="politica-privacidade.html">Política de Privacidade</a> |
+      <a href="termos-uso.html">Termos de Uso</a> |
+      <a href="contato.html">Contato</a>
+    </nav>
+    <p>© 2025 Desenhos Cristãos para Colorir – Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Confete animado -->
+  <canvas id="confete"></canvas>
+</body>
+</html>
