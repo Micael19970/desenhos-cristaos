@@ -93,7 +93,7 @@ function mostrarNotificacao() {
   notif.style.opacity = 1;
   setTimeout(() => { notif.style.opacity = 0; notif.remove(); }, 120000);
 }
-setInterval(mostrarNotificacao, 7000);
+setInterval(mostrarNotificacao, 180000);
 
 // Carrossel de avatares (sem texto)
 const avatares = [
