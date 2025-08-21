@@ -33,6 +33,23 @@ window.addEventListener('DOMContentLoaded', () => {
   if (timerDisplay) startTimer(15*60+23, timerDisplay);
 });
 
+// Timer regressivo da barra de urgência (topo)
+function startBarraTimer(duration, display) {
+  let timer = duration, minutes, seconds;
+  setInterval(function () {
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    display.textContent = `${minutes}:${seconds}`;
+    if (--timer < 0) timer = 0;
+  }, 1000);
+}
+window.addEventListener('DOMContentLoaded', () => {
+  const barraTimer = document.getElementById('barra-timer');
+  if (barraTimer) startBarraTimer(15*60, barraTimer);
+});
+
 // Barra de progresso animada
 function animarProgresso() {
   const fill = document.getElementById('progresso-fill');
@@ -74,7 +91,7 @@ function mostrarNotificacao() {
   notif.textContent = `🎉 ${nome} ${produto}`;
   document.getElementById('notificacoes').appendChild(notif);
   notif.style.opacity = 1;
-  setTimeout(() => { notif.style.opacity = 0; notif.remove(); }, 4000);
+  setTimeout(() => { notif.style.opacity = 0; notif.remove(); }, 120000);
 }
 setInterval(mostrarNotificacao, 7000);
 
@@ -200,6 +217,10 @@ document.querySelector('.cta-barra').onclick = function() {
 document.getElementById('cta-superpack').onclick = function() {
   confete();
   setTimeout(() => { window.location.href = linkSuperPack; }, 800);
+};
+document.getElementById('cta-main-card').onclick = function() {
+  confete();
+  setTimeout(() => { window.location.href = linkCheckout; }, 800);
 };
 
 // Scroll animations
